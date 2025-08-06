@@ -70,3 +70,10 @@ sudo apt-get update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
+sudo apt purge cmake -y
+
+cd $HOME/personal
+
+git clone https://github.com/Kitware/CMake cmake
+cd cmake
+./bootstrap && make && sudo make install 
