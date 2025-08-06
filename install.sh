@@ -58,7 +58,7 @@ component_cli() {
     i3 tmux jq fzf nodejs npm build-essential libssl-dev \
     zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev \
     wget llvm libc6 libssl3 libx11-xcb1 xclip net-tools  \
-    samba maim
+    samba maim ripgrep
   # Default shell to zsh (non-interactive)
   if command -v zsh >/dev/null 2>&1; then
     if [[ "$(getent passwd "$USER" | cut -d: -f7)" != "$(command -v zsh)" ]]; then
