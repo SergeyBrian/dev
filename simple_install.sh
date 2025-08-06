@@ -76,4 +76,5 @@ cd $HOME/personal
 
 git clone https://github.com/Kitware/CMake cmake
 cd cmake
+git checkout v3.31.8
 ./bootstrap && make && sudo make install 
